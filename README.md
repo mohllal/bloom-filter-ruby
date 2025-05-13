@@ -19,3 +19,11 @@ filter.add("banana")
 puts filter.include?("apple")  # true
 puts filter.include?("grape")  # false (unless false positive)
 ```
+
+## Example Usage
+
+Run `ruby example.rb` to see how the Bloom filter works:
+
+- Creates a filter for 50 items but adds 100+ items.
+- Tests that there are no false negatives (guaranteed property).
+- Demonstrates the actual vs. expected false positive rate.
